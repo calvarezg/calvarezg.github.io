@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Alvarez - Professional Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-img">
+                    <img src="assets/profile-photo.jpeg" alt="Carlos Alvarez">
+                </div>
+                <h1>Carlos Alvarez</h1>
+                <p class="tagline">Full-Stack Software Engineer</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/calvarezgcr" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/calvarezg" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:calvarezgcr@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+41 076 226 25 20">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="assets/Carlos_Alvarez_Resume.pdf" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    I am a Software Scientist at Adobe, where I focus on developing innovative solutions that push the 
+                    boundaries of creative technology. With extensive experience in developing comprehensive software 
+                    solutions, my expertise encompasses building robust software architectures, implementing cloud 
+                    technologies, and delivering high-quality web applications. As an experienced technical leader, 
+                    I have successfully guided cross-functional teams to deliver complex projects while maintaining a focus 
+                    on collaborative problem-solving and technical excellence. I remain committed to staying current with 
+                    emerging technologies and contributing to the professional development of fellow engineers.
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming</h3>
+                        <p>Languages & Frameworks</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Management</h3>
+                        <p>Database & Analytics</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud Platforms</h3>
+                        <p>AWS, Azure, GCP</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Team Leadership</h3>
+                        <p>Project Management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Carlos Alvarez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
