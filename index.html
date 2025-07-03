@@ -5,27 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Alvarez - Professional Portfolio</title>
-    <meta name="description" content="Carlos Alvarez - Software Scientist at Adobe specializing in full-stack development, cloud technologies, and innovative software solutions. Experienced technical leader with expertise in web applications and team management.">
-    <meta name="keywords" content="Carlos Alvarez, Software Engineer, Adobe, Full-Stack Developer, Cloud Technologies, Technical Leader, Portfolio">
+    <meta name="description"
+        content="Carlos Alvarez - Software Scientist at Adobe specializing in full-stack development, cloud technologies, and innovative software solutions. Experienced technical leader with expertise in web applications and team management.">
+    <meta name="keywords"
+        content="Carlos Alvarez, Software Engineer, Adobe, Full-Stack Developer, Cloud Technologies, Technical Leader, Portfolio">
     <meta name="author" content="Carlos Alvarez">
-    
+
     <!-- Open Graph tags for social sharing -->
     <meta property="og:title" content="Carlos Alvarez - Professional Portfolio">
-    <meta property="og:description" content="Software Scientist at Adobe specializing in full-stack development, cloud technologies, and innovative software solutions.">
+    <meta property="og:description"
+        content="Software Scientist at Adobe specializing in full-stack development, cloud technologies, and innovative software solutions.">
     <meta property="og:image" content="https://calvarezg.github.io/assets/profile-photo.jpeg">
     <meta property="og:url" content="https://calvarezg.github.io">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
-    
+
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Carlos Alvarez - Professional Portfolio">
-    <meta name="twitter:description" content="Software Scientist at Adobe specializing in full-stack development, cloud technologies, and innovative software solutions.">
+    <meta name="twitter:description"
+        content="Software Scientist at Adobe specializing in full-stack development, cloud technologies, and innovative software solutions.">
     <meta name="twitter:image" content="https://calvarezg.github.io/assets/profile-photo.jpeg">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://calvarezg.github.io">
-    
+
     <!-- JSON-LD Structured Data for Profile Image -->
     <script type="application/ld+json">
     {
@@ -52,7 +56,7 @@
       }
     }
     </script>
-    
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
@@ -100,12 +104,14 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    I am a Software Scientist at Adobe, where I focus on developing innovative solutions that push the 
-                    boundaries of creative technology. With extensive experience in developing comprehensive software 
-                    solutions, my expertise encompasses building robust software architectures, implementing cloud 
-                    technologies, and delivering high-quality web applications. As an experienced technical leader, 
-                    I have successfully guided cross-functional teams to deliver complex projects while maintaining a focus 
-                    on collaborative problem-solving and technical excellence. I remain committed to staying current with 
+                    I am a Software Scientist at Adobe, where I focus on developing innovative solutions that push the
+                    boundaries of creative technology. With extensive experience in developing comprehensive software
+                    solutions, my expertise encompasses building robust software architectures, implementing cloud
+                    technologies, and delivering high-quality web applications. As an experienced technical leader,
+                    I have successfully guided cross-functional teams to deliver complex projects while maintaining a
+                    focus
+                    on collaborative problem-solving and technical excellence. I remain committed to staying current
+                    with
                     emerging technologies and contributing to the professional development of fellow engineers.
                 </div>
                 <div class="skills-grid">
@@ -156,6 +162,19 @@
                 }
             });
         });
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('https://calvarezg.github.io/sw.js', { scope: 'https://calvarezg.github.io/' })
+                    .then(registration => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
     </script>
 </body>
 
