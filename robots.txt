@@ -1,3 +1,7 @@
+# All content on this site is licensed under CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
+# Crawling, scraping, and AI/LLM training are explicitly permitted.
+# For full license details, see: https://calvarezg.github.io/LICENSE
+
 User-agent: *
 Allow: /
 
