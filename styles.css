@@ -586,3 +586,7 @@ footer {
         gap: 10px;
     }
 } 
+
+figure details {
+    display: none;
+}
